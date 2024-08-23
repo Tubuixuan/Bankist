@@ -8,13 +8,222 @@
     <!-- Link Reset -->
     <link rel="stylesheet" href="./reset.css" />
 
+    <!-- Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Link Style -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./Favicon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./Favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./Favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./Favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./Favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./Favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./Favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./Favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./Favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./Favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Title -->
     <title>Bankist</title>
   </head>
   <body>
-    <h1>Như Lạc</h1>
+    <!-- NAV -->
+    <nav class="nav">
+      <p class="nav__p">Good Evening, Jonas!</p>
+      <img src="./Logo/logo.png" alt="Bankis" class="nav__img" />
+      <div class="nav__input">
+        <input class="nav__user" type="text" name="" id="" placeholder="User" />
+        <input class="nav__pin" type="text" name="" id="" placeholder="PIN" />
+        <button class="nav__btn">
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+      </div>
+    </nav>
 
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <!-- Current Balance -->
+      <div class="main__balance">
+        <div class="main__balance--left">
+          <p class="main__balance--left-up">Current balance</p>
+          <p class="main__balance--left-down">
+            As of <span>23/08/2024, 21:03</span>
+          </p>
+        </div>
+        <div class="main__balance--amout">25.952,59 $</div>
+      </div>
+
+      <!-- TRANSACTION -->
+      <div class="main__transaction">
+        <!-- Line1 -->
+        <div class="main__transaction--row1">
+          <div class="main__transaction--row1-deposit">8 DEPOSIT</div>
+          <div class="main__transaction--row1-time">12/03/2020</div>
+          <div class="main__transaction--row1-amout">1300,00$</div>
+        </div>
+
+        <!-- Line2 -->
+        <div class="main__transaction--row1">
+          <div class="main__transaction--row1-deposit">6 WITDRAWAL</div>
+          <div class="main__transaction--row1-time">23/12/2019</div>
+          <div class="main__transaction--row1-amout">-306.5$</div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="main__summary">
+        <p class="main__summary--in">IN</p>
+        <p class="main__summary--in-amount">27 035,2$</p>
+        <p class="main__summary--out">OUT</p>
+        <p class="main__summary--out-amount">-1 082,6$</p>
+        <p class="main__summary--interest">INTEREST</p>
+        <p class="main__summary--interest-amount">-20,5$</p>
+        <button class="main__summary--btn">
+          <i class="fa-solid fa-arrow-down"></i> SORT
+        </button>
+      </div>
+
+      <!-- TRANSFER -->
+      <div class="main__transfer">
+        <p class="main__transfer--p">Transfer money</p>
+        <form action="#!">
+          <input
+            type="text"
+            class="main__transfer--input-member"
+            placeholder=""
+          />
+          <input
+            type="number"
+            class="main__transfer--input-amout"
+            placeholder=""
+          />
+          <button class="main__transfer--btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <label class="form__label" for="main__transfer--input-member"
+            >Transfer to</label
+          >
+          <label class="form__label" for="main__transfer--input-amout"
+            >Amount</label
+          >
+        </form>
+      </div>
+
+      <!-- LOAN -->
+      <div class="main__loan">
+        <p class="main__loan--p">Request loan</p>
+        <form action="#!" class="main__loan--form">
+          <input type="number" class="main__loan--input-amout" placeholder="" />
+          <button class="main__loan--btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <label class="form__label" for="main__loan--input-amout"
+            >Amount</label
+          >
+        </form>
+      </div>
+
+      <!-- CLOSE -->
+      <div class="main__close">
+        <p class="main__close--p">Close account</p>
+        <form action="#!" class="main__close--form">
+          <input type="text" class="main__close--input-user" placeholder="" />
+          <input type="number" class="main__close--input-pin" placeholder="" />
+          <button class="main__close--btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <label class="form__label" for="main__close--input-user">User</label>
+          <label class="form__label" for="main__close--input-pin">PIN</label>
+        </form>
+      </div>
+
+      <!-- LOGOUT -->
+      <div class="main__logout">
+        <p class="main__logout--p">
+          You will be logged out in
+          <span class="main__logout--p-span">09:44</span>
+        </p>
+      </div>
+    </main>
     <!-- Link JS -->
     <script src="./Javascript.js"></script>
   </body>

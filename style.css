@@ -7,8 +7,75 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
+  background-color: #dee2e6;
+}
+
+.nav {
+  max-width: 1440px;
+  height: 60px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav__img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__user,
+.nav__pin {
+  width: 100px;
+  height: 25px;
+  border: none;
+  text-align: center;
+  border-radius: 25px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.nav__p {
+  margin-left: 20px;
+}
+
+.nav__btn {
+  margin-right: 20px;
+  border: none;
+  width: 40px;
+  height: 25px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.nav__btn:hover {
+  cursor: pointer;
+}
+
+.nav__btn:active {
+  transform: scale(0.96);
+}
+
+.nav__user:focus,
+.nav__pin:focus {
+  outline: none;
+}
+
+/* Cho phần tử xoay tròn vô cực */
+.nav__img {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
